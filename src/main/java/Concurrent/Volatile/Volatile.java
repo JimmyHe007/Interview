@@ -35,11 +35,13 @@ public class Volatile implements Runnable {
         print("entering workMethod()");
         print("in workMethod() - about to sleep for 2 seconds");
         Thread.sleep(2000);
-        value = 50;
+        missedIt = true;
+//        value = 50;
         print("in workMethod() - just set value=" + value);
         print("in workMethod() - about to sleep for 5 seconds");
         Thread.sleep(5000);
-        missedIt = true;
+//        missedIt = true;
+        value = 50;
         print("in workMethod() - just set missedIt=" + missedIt);
         print("in workMethod() - about to sleep for 3 seconds");
         Thread.sleep(3000);
