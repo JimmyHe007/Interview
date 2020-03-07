@@ -1,4 +1,4 @@
-package JVM;
+package JVM.Bytecode;
 
 /**
  * 字节码如下

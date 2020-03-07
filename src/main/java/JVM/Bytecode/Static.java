@@ -1,4 +1,4 @@
-package JVM;
+package JVM.Bytecode;
 
 /**
  * static按代码顺序执行
