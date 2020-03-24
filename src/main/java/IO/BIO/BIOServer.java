@@ -6,7 +6,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * BIO通信模型, 由一个主线程进行监听, 此处为了可以同时处理多个客户端请求, 在接收到客户端请求后为每一个客户端创建一个新的线程来进行处理
+ * BIO通信模型, 同步阻塞, 由一个主线程进行监听, 此处为了可以同时处理多个客户端请求, 在接收到客户端请求后为每一个客户端创建一个新的线程来进行处理
  */
 
 public class BIOServer {
