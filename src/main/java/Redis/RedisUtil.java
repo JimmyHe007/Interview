@@ -8,14 +8,14 @@ import java.util.Collections;
 
 public class RedisUtil {
 
-    private static final String host = "192.168.0.122";
+    private static final String HOST = "192.168.0.122";
 
-    private static final int port = 6379;
+    private static final int PORT = 6379;
 
     private static JedisPool jedisPool;
 
     static {
-        jedisPool = new JedisPool(host, port);
+        jedisPool = new JedisPool(HOST, PORT);
     }
 
     public static Jedis getJedis() {

@@ -9,7 +9,7 @@ import java.util.Deque;
 public class MaxSlidingWindow {
 
     private static ArrayDeque<Integer> deq = new ArrayDeque<Integer>();
-    private static int [] numst;
+//    private static int [] numst;
 
     public static void main(String[] args) {
 
