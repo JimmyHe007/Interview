@@ -1,16 +1,14 @@
 package DesignPattern.IteratorPattern.JDKIterator;
 
-import DesignPattern.IteratorPattern.JDKIterator.Restaurant.DinerMenu;
-import DesignPattern.IteratorPattern.JDKIterator.Restaurant.Menu;
-import DesignPattern.IteratorPattern.JDKIterator.Restaurant.PancakeHouseMenu;
-import DesignPattern.IteratorPattern.JDKIterator.Restaurant.Waitress;
+import DesignPattern.IteratorPattern.JDKIterator.Restaurant.*;
 
 public class Test {
 
     public static void main(String[] args) {
         Menu pancakeHouseMenu = new PancakeHouseMenu();
         Menu dinerMenu = new DinerMenu();
-        Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu);
+        Menu cafeMenu = new CafeMenu();
+        Waitress waitress = new Waitress(pancakeHouseMenu, dinerMenu, cafeMenu);
         waitress.printMenu();
     }
 
